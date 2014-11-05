@@ -1,0 +1,11 @@
+---
+# Simple LAMP playbook
+# Author: Arnaud Baali
+# Date: 05.11.2014
+
+- name: initial configuration for Debian
+  hosts: all
+  remote_user: root
+
+  roles:
+    - common
