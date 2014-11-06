@@ -1,0 +1,10 @@
+---
+# Nginx installation and configuration
+
+- apt: name=nginx state=present
+
+- apt: name=nginx-common state=present
+
+- apt: name=nginx-doc state=present
+
+- apt: name=nginx-extras state=present
