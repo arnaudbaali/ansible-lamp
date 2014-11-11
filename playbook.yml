@@ -3,9 +3,8 @@
 # Author: Arnaud Baali
 # Date: 05.11.2014
 
-- name: initial configuration for Debian
-  hosts: all
+- hosts: dev
   remote_user: root
 
   roles:
-    - common
+    - { role: common, tags: [] }

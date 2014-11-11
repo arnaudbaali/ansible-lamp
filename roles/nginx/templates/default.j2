@@ -1,0 +1,11 @@
+server {
+  listen   80;
+  server_name  {{nginx_server_name}};
+  access_log  {{nginx_log_dir}}/default.access.log;
+
+  location / {
+    root   {{nginx_default_root}};
+    index  index.html index.htm;
+  }
+
+}

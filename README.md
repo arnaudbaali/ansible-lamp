@@ -17,6 +17,8 @@ You can follow [this page][1] to know how to install Ansible.
 define which servers you want to provision
 
 
+## X. Launch provisionning
 
+ansible-playbook playbook.yml -i hosts -vvvv
 
 [1]:http://docs.ansible.com/intro_installation.html

@@ -1,4 +1,5 @@
 ---
+# file: nginx/defaults/main.yml
 # Nginx installation and configuration
 
 - apt: name=nginx state=present
@@ -8,3 +9,13 @@
 - apt: name=nginx-doc state=present
 
 - apt: name=nginx-extras state=present
+
+# Configuration
+
+- name: Define default configuration for Nginx
+  template: src=/templates/default.j2 dest=/etc/nginx/sites-available/default.conf
+
+- name: Activating default website
+  file: src= /etc/nginx/sites-available/default.conf dest=/etc/nginx/sites-enable/default.conf state=link
+  notify: restart nginx
+

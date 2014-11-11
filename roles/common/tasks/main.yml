@@ -3,5 +3,9 @@
 
 # updating the source list of packages
 - apt: update_cache=yes cache_valid_time=3600
+  tags:
+     - debian
 
 - apt: name=vim state=present
+  tags:
+     - debian
