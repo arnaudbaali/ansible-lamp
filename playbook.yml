@@ -3,7 +3,7 @@
 # Author: Arnaud Baali
 # Date: 05.11.2014
 
-- hosts: dev
+- hosts: all
   remote_user: root
 
   roles:
