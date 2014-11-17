@@ -2,13 +2,13 @@
 # file: nginx/defaults/main.yml
 # Nginx installation and configuration
 
-- apt: name=nginx state=present
-
-- apt: name=nginx-common state=present
-
-- apt: name=nginx-doc state=present
-
-- apt: name=nginx-extras state=present
+- name: Installing Nginx
+  apt: name={{ item }} state=present
+  with_items:
+     - nginx
+     - nginx-common
+     - nginx-doc
+     - nginx-extras
 
 # Configuration
 
@@ -17,5 +17,5 @@
 
 - name: Activating default website
   file: src= /etc/nginx/sites-available/default.conf dest=/etc/nginx/sites-enable/default.conf state=link
-  notify: restart nginx
+  notify: restart-nginx
 
