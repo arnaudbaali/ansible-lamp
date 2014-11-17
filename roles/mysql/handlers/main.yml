@@ -1,0 +1,11 @@
+---
+# MySQL Handlers
+
+- name: start-mysql
+  service: name=mysqld state=started
+
+- name: stop-mysql
+  service: name=mysqld state=stopped
+
+- name: restart-mysql
+  service: name=mysqld state=restarted
