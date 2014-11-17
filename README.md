@@ -19,6 +19,10 @@ define which servers you want to provision
 
 ## X. Launch provisionning
 
-ansible-playbook playbook.yml -i hosts -vvvv
+ansible-playbook playbook.yml -i inventory/hosts -vvvv
+
+and if you want a more simple way use the make command
+
+make install dev for hosts in dev group
 
 [1]:http://docs.ansible.com/intro_installation.html
