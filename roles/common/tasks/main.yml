@@ -9,3 +9,7 @@
 - apt: name=vim state=present
   tags:
      - debian
+
+- apt: name=curl state=present
+  tags:
+     - debian

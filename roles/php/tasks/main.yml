@@ -1,0 +1,328 @@
+---
+# PHP provisionning
+
+# Install PHP5 default version
+- apt: name=php5 state=present
+
+# php5-exactimage - fast image manipulation library (PHP bindings)
+- apt: name=php5-exactimage state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-ffmpeg - audio and video support via ffmpeg for php5
+- apt: name=php5-ffmpeg state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-gdcm - Grassroots DICOM PHP5 bindings
+- apt: name=php5-gdcm state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-vtkgdcm - Grassroots DICOM VTK PHP bindings
+- apt: name=php5-vtkgdcm state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-lasso - Library for Liberty Alliance and SAML protocols - PHP 5 bindings
+- apt: name=php5-lasso state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-mapscript - php5-cgi module for MapServer
+- apt: name=php5-mapscript state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-ming - Ming module for php5
+- apt: name=php5-ming state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-adodb - Extension optimising the ADOdb database abstraction library
+- apt: name=php5-adodb state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-geoip - GeoIP module for php5
+- apt: name=php5-geoip state=present
+   tags:
+      - debian
+      - php5-complete
+      - php5-default
+
+# php5-imagick - ImageMagick module for php5
+- apt: name=php5-imagick state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-memcache - memcache extension module for PHP5
+- apt: name=php5-memcache state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-memcached - memcached extension module for PHP5, uses libmemcached
+- apt: name=php5-memcached state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-ps - ps module for PHP 5
+- apt: name=php5-ps state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-radius - PECL radius module for PHP 5
+- apt: name=php5-radius state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-rrd - rrd module for PHP 5
+- apt: name=php5-rrd state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-sasl - Cyrus SASL extension for PHP 5
+- apt: name=php5-sasl state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-svn - PHP Bindings for the Subversion Revision control system
+- apt: name=php5-svn state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-tokyo-tyrant - PHP interface to Tokyo Cabinet's network interface, Tokyo Tyrant
+- apt: name=php5-tokyo-tyrant state=present
+   tags:
+      - debian
+      - php5-complete
+
+# libphp5-embed - HTML-embedded scripting language (Embedded SAPI library)
+- apt: name=libphp5-embed state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-cgi - server-side, HTML-embedded scripting language (CGI binary)
+- apt: name=php5-cgi state=present
+   tags:
+      - debian
+      - php5-complete
+      - nginx
+
+# php5-cli - command-line interpreter for the php5 scripting language
+- apt: name=php5-cli state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-common - Common files for packages built from the php5 source
+- apt: name=php5-common state=present
+   tags:
+      - debian
+      - php5-complete
+      - php5-default
+
+# php5-curl - CURL module for php5
+- apt: name=php5-curl state=present
+   tags:
+      - debian
+      - php5-complete
+      - php5-default
+
+# php5-dbg - Debug symbols for PHP5
+- apt: name=php5-dbg state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-dev - Files for PHP5 module development
+- apt: name=php5-dev state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-enchant - Enchant module for php5
+- apt: name=php5-enchant state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-fpm - server-side, HTML-embedded scripting language (FPM-CGI binary)
+- apt: name=php5-fpm state=present
+   tags:
+      - debian
+      - php5-complete
+      - nginx
+
+# php5-gd - GD module for php5
+- apt: name=php5-gd state=present
+   tags:
+      - debian
+      - php5-complete
+      - php5-default
+
+# php5-gmp - GMP module for php5
+- apt: name=php5-gmp state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-imap - IMAP module for php5
+- apt: name=php5-imap state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-interbase - interbase/firebird module for php5
+- apt: name=php5-interbase state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-intl - internationalisation module for php5
+- apt: name=php5-intl state=present
+   tags:
+      - debian
+      - php5-complete
+      - php5-default
+
+# php5-ldap - LDAP module for php5
+- apt: name=php5-ldap state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-mcrypt - MCrypt module for php5
+- apt: name=php5-mcrypt state=present
+   tags:
+      - debian
+      - php5-complete
+      - php5-default
+
+# php5-mysql - MySQL module for php5
+- apt: name=php5-mysql state=present
+   tags:
+      - debian
+      - php5-complete
+      - php5-default
+
+# php5-mysqlnd - MySQL module for php5 (Native Driver)
+- apt: name=php5-mysqlnd state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-odbc - ODBC module for php5
+- apt: name=php5-odbc state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-pgsql - PostgreSQL module for php5
+- apt: name=php5-pgsql state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-pspell - pspell module for php5
+- apt: name=php5-pspell state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-recode - recode module for php5
+- apt: name=php5-recode state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-snmp - SNMP module for php5
+- apt: name=php5-snmp state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-sqlite - SQLite module for php5
+- apt: name=php5-sqlite state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-sybase - Sybase / MS SQL Server module for php5
+- apt: name=php5-sybase state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-tidy - tidy module for php5
+- apt: name=php5-tidy state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-xmlrpc - XML-RPC module for php5
+- apt: name=php5-xmlrpc state=present
+   tags:
+      - debian
+      - php5-complete
+      - php5-default
+
+# php5-xsl - XSL module for php5
+- apt: name=php5-xsl state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-librdf - PHP5 language bindings for the Redland RDF library
+- apt: name=php5-librdf state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-remctl - PECL module for Kerberos-authenticated command execution
+- apt: name=php5-remctl state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-xcache - Fast, stable PHP opcode cacher
+- apt: name=php5-xcache state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-xdebug - Xdebug Module for PHP 5
+- apt: name=php5-xdebug state=present
+   tags:
+      - debian
+      - php5-complete
+      - php5-default
+
+# php5-mongo - MongoDB database driver
+- apt: name=php5-mongo state=present
+   tags:
+      - debian
+      - php5-complete
+
+# php5-redis - PHP extension for interfacing with Redis
+- apt: name=php5-redis state=present
+   tags:
+      - debian
+      - php5-complete
