@@ -1,8 +1,14 @@
 ---
 # Commands that will be used during provisionning
 
-- name: restart nginx
+- name: restart-nginx
   service: name=nginx state=restarted
 
-- name: reload nginx
+- name: reload-nginx
   service: name=nginx state=reloaded
+
+- name: start-nginx
+  service: name=nginx state=started
+
+- name: stop-nginx
+  service: name=nginx state=stopped
